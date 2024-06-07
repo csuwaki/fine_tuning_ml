@@ -62,13 +62,6 @@ Fine-tuning is the process of taking a pre-trained model and training it further
 
 
 ## Fine Tuning Usage
-To fine-tune the model, follow these steps:
-
-## Prerequisites
-- Python 3.6 or higher
-- transformers 
-- fastapi 
-- uvicorn 
 
 1. Navigate to the fine tuning directory:
 
@@ -114,19 +107,13 @@ Tokenizer will be saved to: /path/to/output/tokenizer
     cd src
     ```
 
-2. Install the required dependencies:
-   
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Run the API server:
+2. Run the API server:
 
     ```bash
     uvicorn api:app --reload
     ```
 
-4. The API server will start running locally. You can access the API documentation at `http://localhost:8000/docs`.
+3. The API server will start running locally. You can access the API documentation at `http://localhost:8000/docs`.
 
 ## API Usage
 
