@@ -5,38 +5,6 @@ This repository contains a guide to the process of fine-tuning a model with your
 ## Overview
 ![Overview](images/overview.png)
 
-## Fine-Tuning the Model
-
-Fine-tuning is the process of taking a pre-trained model and training it further on a specific dataset to improve its performance on that dataset.
-
-### Prerequisites
-- Python 3.6 or higher
-- Transformers 
-- Datasets 
-- PyTorch
-- A dataset of question-answer pairs
-
-### Installation
-
-1. Clone this repository:
-
-    ```bash
-    git clone https://github.com/csuwaki/fine_tuning_ml.git
-    ```
-
-2. Navigate to the repository directory:
-
-    ```bash
-    cd src
-    ```
-
-3. Install the required dependencies:
-
-    ```bash
-   pip install -r requirements.txt
-    ```
-
-  
 ### Steps
 1. Load Model and Tokenizer
    - Load a pre-trained  model and tokenizer.
@@ -57,11 +25,31 @@ Fine-tuning is the process of taking a pre-trained model and training it further
 
 
 
-## Training Overview
-![Training Process](images/training.png)
+### Prerequisites
+- Python 3.6 or higher
+- Transformers 
+- Datasets 
+- PyTorch
+- A dataset of question-answer pairs
+
+### Installation
+
+1. Clone this repository:
+
+    ```bash
+    git clone https://github.com/csuwaki/fine_tuning_ml.git
+    ```
+
+2. Install the required dependencies on the root folder:
+
+    ```bash
+   pip install -r requirements.txt
+    ```  
 
 
-## Fine Tuning Usage
+## Fine-Tuning the Model
+
+Fine-tuning is the process of taking a pre-trained model and training it further on a specific dataset to improve its performance on that dataset.
 
 1. Navigate to the fine tuning directory:
    
@@ -69,6 +57,7 @@ Fine-tuning is the process of taking a pre-trained model and training it further
     ```bash
     cd src
     ```
+
 2. Ensure you have a JSON file with the following structure:
    
    ```json
@@ -80,9 +69,10 @@ Fine-tuning is the process of taking a pre-trained model and training it further
 ]
 ```
 
-1. Place your dataset file in the data directory.
 
-2. Run the fine-tuning script from the command line, providing the --data-path:
+3. Place your dataset file in a directory.
+
+4. Run the fine-tuning script from the command line, providing the --data-path:
 
 
 ```sh
