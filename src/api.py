@@ -1,11 +1,16 @@
+import os
 from fastapi import FastAPI, HTTPException, Body
 from pydantic import BaseModel, Field
 from transformers import GPT2Tokenizer, GPT2LMHeadModel
 
 app = FastAPI()
 
-tokenizer = GPT2Tokenizer.from_pretrained("/home/csuwaki/ifood/repos/caroline_suwaki/tokenizer")
-model = GPT2LMHeadModel.from_pretrained("/home/csuwaki/ifood/repos/caroline_suwaki/model")
+script_path = os.path.dirname(os.path.realpath(__file__))
+tokenizer_path = os.path.join(script_path, "tokenizer")
+model_path = os.path.join(script_path, "model")
+
+tokenizer = GPT2Tokenizer.from_pretrained(tokenizer_path)
+model = GPT2LMHeadModel.from_pretrained(model_path)
 
 class Question(BaseModel):
     question: str = Field(..., example="What criteria determine a route's eligibility for return?")
