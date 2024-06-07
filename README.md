@@ -87,6 +87,9 @@ Model will be saved to: /path/to/output/model
 Tokenizer will be saved to: /path/to/output/tokenizer
 ```
 5. After fine-tuning, the trained model and tokenizer will be saved in the specified output directories.
+
+## Fine tuning Overview
+![Fine Tuning Process](images/training.png)
    
 ## Deploying the Model as an API
 
@@ -122,5 +125,5 @@ curl -X 'POST' \
   -d '{"question": "What is the purpose of a return route?"}'
   ```
 
-## API OVerview
+## API Overview
 ![API Deployment](images/api.png)
