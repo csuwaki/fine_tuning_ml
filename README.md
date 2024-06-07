@@ -69,15 +69,9 @@ Fine-tuning is the process of taking a pre-trained model and training it further
     cd src
     ```
 
-2. Install the required dependencies:
-   
-    ```bash
-    pip install -r requirements.txt
-    ```
+2. Place your dataset file in the data directory.
 
-3. Place your dataset file in the data directory.
-
-4. Run the fine-tuning script from the command line, providing the --data-path:
+3. Run the fine-tuning script from the command line, providing the --data-path:
 
 
 ```sh
