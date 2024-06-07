@@ -61,12 +61,30 @@ Fine-tuning is the process of taking a pre-trained model and training it further
 ![Training Process](images/training.png)
 
 
-## Usage
+## Fine Tuning Usage
 To fine-tune the model, follow these steps:
 
-1. Place your dataset file in the data directory.
+## Prerequisites
+- Python 3.6 or higher
+- transformers 
+- fastapi 
+- uvicorn 
 
-2. Run the fine-tuning script from the command line, providing the --data-path:
+1. Navigate to the fine tuning directory:
+
+    ```bash
+    cd src
+    ```
+
+2. Install the required dependencies:
+   
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Place your dataset file in the data directory.
+
+4. Run the fine-tuning script from the command line, providing the --data-path:
 
 
 ```sh
@@ -80,7 +98,7 @@ Processing data from: /path/to/your/datafile.txt
 Model will be saved to: /path/to/output/model
 Tokenizer will be saved to: /path/to/output/tokenizer
 ```
-3. After fine-tuning, the trained model and tokenizer will be saved in the specified output directories.
+5. After fine-tuning, the trained model and tokenizer will be saved in the specified output directories.
    
 ## Deploying the Model as an API
 
