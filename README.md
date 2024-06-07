@@ -27,7 +27,7 @@ Fine-tuning is the process of taking a pre-trained model and training it further
 2. Navigate to the repository directory:
 
     ```bash
-    cd fine_tuning
+    cd src
     ```
 
 3. Install the required dependencies:
@@ -102,7 +102,7 @@ Tokenizer will be saved to: /path/to/output/tokenizer
 1. Navigate to the api directory:
 
     ```bash
-    cd api
+    cd src
     ```
 
 2. Install the required dependencies:
