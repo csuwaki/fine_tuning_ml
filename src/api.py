@@ -5,7 +5,7 @@ from transformers import GPT2Tokenizer, GPT2LMHeadModel
 
 app = FastAPI()
 
-script_path = os.path.dirname(os.path.realpath(__file__))
+script_path = os.getcwd() 
 tokenizer_path = os.path.join(script_path, "tokenizer")
 model_path = os.path.join(script_path, "model")
 
