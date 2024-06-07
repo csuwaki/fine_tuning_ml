@@ -86,7 +86,19 @@ Processing data from: /path/to/your/datafile.txt
 Model will be saved to: /path/to/output/model
 Tokenizer will be saved to: /path/to/output/tokenizer
 ```
+
 5. After fine-tuning, the trained model and tokenizer will be saved in the specified output directories.
+
+Output should be:
+
+```sh
+{'eval_loss': 1.9696730375289917, 'eval_runtime': 95.4608, 'eval_samples_per_second': 0.314, 'eval_steps_per_second': 0.314, 'epoch': 1.0}
+{'train_runtime': 1911.388, 'train_samples_per_second': 0.061, 'train_steps_per_second': 0.061, 'train_loss': 2.3262159559461804, 'epoch': 1.0}                                                                                                
+
+INFO:__main__:Fine-tuning completed successfully.
+100%|███████████████████████████████████████████████████████████████████████████████████████████| 30/30 [01:28<00:00,  2.94s/it]
+INFO:__main__:Evaluation results: {'eval_loss': 1.9696730375289917, 'eval_runtime': 89.6907, 'eval_samples_per_second': 0.334, 'eval_steps_per_second': 0.334, 'epoch': 1.0}
+```
 
 ## Fine tuning Overview
 ![Fine Tuning Process](images/training.png)
