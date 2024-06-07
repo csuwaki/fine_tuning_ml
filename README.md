@@ -42,7 +42,7 @@ Fine-tuning is the process of taking a pre-trained model and training it further
    - Load a pre-trained  model and tokenizer.
    - Set the tokenizer's padding token to the EOS token to handle variable sequence lengths.
 2. Prepare Data
-   - Load your dataset from a file.
+   - Load your dataset from a JSON file.
    - Clean the data to ensure that each entry has both a question and an answer.
    - Tokenize the questions and answers.
 3. Train/Test Split
@@ -60,26 +60,17 @@ Fine-tuning is the process of taking a pre-trained model and training it further
 ## Training Overview
 ![Training Process](images/training.png)
 
-## Deploying the Model as an API
-Once you have a fine-tuned model, you can deploy it as an API to answer questions.
-
-### Prerequisites
-
-- Python 3.6 or higher
-- `transformers` library
-- `fastapi` library
-- `uvicorn` library
 
 ## Usage
 To fine-tune the model, follow these steps:
 
 1. Place your dataset file in the data directory.
 
-2. Run the fine-tuning script from the command line, providing the --data-path and --output-base-path arguments:
+2. Run the fine-tuning script from the command line, providing the --data-path:
 
 
 ```sh
-python fine_tuning_ml_case.py --data-path /path/to/your/datafile.txt --output-base-path /path/to/output
+python fine_tuning_ml_case.py --data-path /path/to/your/datafile.txt 
 ```
 
 Output should be:
