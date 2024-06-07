@@ -3,7 +3,6 @@ import logging
 import torch
 import argparse
 import os
-import sys
 from datasets import Dataset
 from transformers import GPT2Tokenizer, GPT2LMHeadModel, Trainer, TrainingArguments
 
@@ -61,7 +60,7 @@ def train_model(model, training_args, train_data, val_data):
     return trainer
 
 def main():
-    script_path = os.path.realpath(sys.argv[0])
+    script_path = os.getcwd()
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_path', 
                         type=str, 
